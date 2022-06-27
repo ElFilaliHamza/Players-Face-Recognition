@@ -1,0 +1,68 @@
+/* CSS HEX */
+.root{
+  --skobeloff: #006466ff;
+  --midnight-green-eagle-green: #065a60ff;
+  --midnight-green-eagle-green-2: #0b525bff;
+  --midnight-green-eagle-green-3: #144552ff;
+  --charcoal: #1b3a4bff;
+  --prussian-blue: #212f45ff;
+  --space-cadet: #272640ff;
+  --dark-purple: #312244ff;
+  --dark-purple-2: #3e1f47ff;
+  --palatinate-purple: #4d194dff;
+
+  --primary-hover : #1baa73;
+  --background-one: #041d20;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+
+
+
+
+

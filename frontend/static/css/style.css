@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    color: white;
+}
+
+.myImage{
+    max-width: 90%;
+    max-height: 60%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 28px -3px #000000; 
+    box-shadow: 0px 0px 28px -3px #000000;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.myImage:hover{
+  transform: scale(1.1);
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(236, 10, 10);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block{
+    position: absolute;
+    /* border-radius: 50%; */
+    width: 50px;
+    height: 100px;
+    background-color: rgb(236, 10, 10);
+    box-shadow: 0px 0px 37px -6px rgb(0, 0, 0);
+    opacity: 0;
+}
+.myContainer{
+    border-radius: 5%;
+    padding: 20px;
+    width: 40vw;
+    height: 90vh;
+    background-color: rgb(236, 10, 10);
+    box-shadow: 0px 0px 37px -6px rgba(0,0,0,0.57);
+    z-index: 10;
+}
+.myBtn{
+    width: 100px;
+    height: 50px;
+}
+.myText{
+    z-index: 1000;
+    font-size: 100px;
+    color: white;
+    font-family: 'Baloo 2';
+}
+
+
+
+
+
+
+
+
+/* 
+.file-upload .file-upload-select {
+    margin: 10px 0;
+	display: block;
+	color: #dbdbdb;
+	cursor: pointer;
+	text-align: left;
+	background: #c0392b;
+	/* background: #1a242f; /
+	overflow: hidden;
+	position: relative;
+	border-radius: 6px;
+}
+.file-upload .file-upload-select .file-select-button {
+	background: #e74c3c;
+	padding: 10px;
+	display: inline-block;
+}
+.file-upload .file-upload-select .file-select-name {
+	display: inline-block;
+	padding: 10px;
+}
+.file-upload .file-upload-select:hover .file-select-button {
+	background: #d8311f;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.file-upload .file-upload-select input[type="file"] {
+	display: none;
+} */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .file-upload {
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #fff;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #c70606 50%, #fff 50%);
+    background-size: 100% 200%;
+    transition: all 1s;
+    color: #fff;
+    font-size: 100px;
+}
+.wrapper .file-upload input[type='file'] {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.wrapper .file-upload:hover {
+    background-position: 0 -100%;
+    color: #c70606;
+}
+
+.fa-2x{
+    font-size:20px !important;
+}
+
+
+
+.button, .button::after {
+  cursor: pointer;
+  padding: 2px 10px;
+  width: 70%;
+  height: 100px;
+  font-size: 36px;
+  font-family: 'Bebas Neue', cursive;
+  /* background: linear-gradient(45deg, transparent 5%, #e74c3c 5%); */
+  background: linear-gradient(45deg, transparent 5%, #c70606 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 2rem;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+  .button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #c70606 5%);
+    text-shadow: -3px -3px 0px #059ff8, 3px 3px 0px #f60067;
+    clip-path: var(--slice-0);
+  }
+  
+  .button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -20px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 20px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, 20px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 15px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-15px, 5px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(50px, 15px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+
+
+  /* @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  } */
