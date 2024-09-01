@@ -84,4 +84,4 @@ Contributions to improve the Players-Face-Recognition project are welcome. Pleas
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License .
