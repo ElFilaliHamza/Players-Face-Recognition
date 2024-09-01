@@ -76,7 +76,7 @@ The face recognition model was trained using the LBPHFaceRecognizer algorithm fr
 
 ## Dataset
 
-The dataset used for training the model is not included in this repository due to size limitations. You can find more information about the dataset [here](#).
+The dataset used for training the model is not included in this repository due to size limitations.
 
 ## Contributing
 
